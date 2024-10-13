@@ -40,7 +40,7 @@ export default function Home() {
             whileTap={{ scale: 0.95 }}
             className="bg-white hover:bg-gray-200 text-black font-bold py-3 px-6 rounded-full transition duration-300"
           >
-            ADQUIRA JÁ
+            JOGUE JÁ
           </motion.button>
         </section>
 
@@ -89,7 +89,7 @@ export default function Home() {
                   felis.
                 </p>
                 <button className="bg-white hover:bg-gray-200 text-black font-bold py-2 px-4 rounded transition duration-300">
-                  ADQUIRA JÁ
+                  JOGUE JÁ
                 </button>
               </motion.div>
             </div>

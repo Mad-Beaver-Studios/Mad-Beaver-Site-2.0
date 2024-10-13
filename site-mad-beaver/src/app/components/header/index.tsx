@@ -39,11 +39,11 @@ export function Header() {
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem className=" hover:text-red-700 text-white hover:scale-110 transition-all duration-700">
-            <BreadcrumbLink href="/servic">Services</BreadcrumbLink>
+            <BreadcrumbLink href="/jogos">Jogos</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem className="  hover:text-red-700 text-white hover:scale-110 transition-all duration-700">
-            <BreadcrumbLink href="/">Contatos</BreadcrumbLink>
+            <BreadcrumbLink href="/sobrenos">Sobre Nós</BreadcrumbLink>
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
