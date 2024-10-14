@@ -132,7 +132,7 @@ export default function Home() {
               <h3 className="text-xl font-bold mb-2 text-white">
                 BottomlessInferno
               </h3>
-              <p className="text-gray-400">© 2023 All rights reserved.</p>
+              <p className="text-gray-400">© 2024 All rights reserved.</p>
             </div>
             <div className="flex space-x-4">
               <a
