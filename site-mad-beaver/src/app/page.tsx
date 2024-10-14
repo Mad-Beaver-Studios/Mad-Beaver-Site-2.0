@@ -7,6 +7,7 @@ import Img1 from "../../public/img1.png";
 import Img2 from "@/app/public/img2.jpeg";
 import { Github, Twitter, Linkedin } from "lucide-react";
 
+
 export default function Home() {
   const [imageError, setImageError] = useState(false);
 
