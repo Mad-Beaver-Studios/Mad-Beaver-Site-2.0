@@ -1,8 +1,16 @@
-import { motion } from "framer-motion";
-import { Github, Twitter, Linkedin } from "lucide-react";
-
+import Logo from '../../../public/logo.png'
+import Image from "next/image";
+import Img1 from "../../../public/img1.png"
 
 export default function Sobrenos(){
+  const teamMembers = [
+    { id: 1, nome: "Gustavo", cargo: "Front-end", src: Logo },
+    { id: 2, nome: "Ana", cargo: "Back-end", src: Img1 },
+    { id: 3, nome: "Carlos", cargo: "Designer", src: Logo },
+    { id: 4, nome: "Mariana", cargo: "Product Manager", src: Logo },
+    { id: 5, nome: "Rafael", cargo: "QA Engineer", src: Logo },
+  ]
+ 
     return(
         <div className=" bg-[url] min-h-screen flex flex-col bg-black text-white">
             {/* Quem Somos */}
@@ -52,62 +60,24 @@ export default function Sobrenos(){
             </section>
 
             {/* Nossos Time(DPS ALGUEM AQUI AJEITA ESSA BOSTA PQ PQP ESSA MERDA N TA PEGANDO A KEY E SIM FAZENDO LISTA PORRA É POR ISSO Q N DA PRA USAR IA) */}
-            <section className="py-20 bg-black">
+            <section className="py-20 bg-gray-900">
           <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold mb-12 text-center text-gray-100">
-              NOSSA EQUIPE
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
-              {[1, 2, 3, 4, 5].map((member) => (
-                <div
-                  key={member}
-                  className="bg-gray-900 p-6 rounded-lg text-center border border-gray-800"
-                >
-                  <div className="w-[100px] h-[100px] bg-gray-800 rounded-full mx-auto mb-4 flex items-center justify-center border border-gray-700">
-                    <p className="text-gray-300">User</p>
+            <h2 className="text-4xl font-bold mb-12 text-center text-gray-100">NOSSA EQUIPE</h2>
+            <div className="grid grid-cols-1 text-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+              {teamMembers.map((member) => (
+                
+                  <div>
+                  <div      key={member.id} className="w-24 h-24 bg-gray-700 rounded-full mx-auto mb-4 flex items-center justify-center border border-gray-600 overflow-hidden">
+                    <Image src={member.src} alt={member.nome} width={96} height={96} className="object-cover" />
                   </div>
-                  <h3 className="font-bold mb-2 text-white">Luiz</h3>
-                  <p className="text-gray-400">Cargo</p>
-                </div>
+                  <h3 className="text-xl font-bold text-gray-100 mb-2">{member.nome}</h3>
+                  <p className="text-gray-400">{member.cargo}</p>
+                  </div>
               ))}
             </div>
           </div>
         </section>
     </main>
-
-      {/* Footer */}
-      <footer className="bg-black border-t border-gray-800 py-8">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-4 md:mb-0">
-              <h3 className="text-xl font-bold mb-2 text-white">
-                BottomlessInferno
-              </h3>
-              <p className="text-gray-400">© 2024 All rights reserved.</p>
-            </div>
-            <div className="flex space-x-4">
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition duration-300"
-              >
-                <Github size={24} />
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition duration-300"
-              >
-                <Twitter size={24} />
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition duration-300"
-              >
-                <Linkedin size={24} />
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
     ) 
 }
