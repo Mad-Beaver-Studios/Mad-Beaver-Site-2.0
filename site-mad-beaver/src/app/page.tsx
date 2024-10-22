@@ -79,7 +79,7 @@ export default function Home() {
                 className="md:w-1/2 md:pl-8"
               >
                 <h3 className="text-3xl font-bold mb-4 text-white">
-                  BottomlessInferno
+                  Bottomless Inferno
                 </h3>
                 <p className="mb-6 text-gray-300">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
