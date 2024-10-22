@@ -1,14 +1,18 @@
 import Logo from '../../../public/logo.png'
 import Image from "next/image";
-import Img1 from "../../../public/img1.png"
+import LuizPhoto from '../../../public/LuizPhoto.jpg'
+import EricPhoto from '../../../public/EricPhoto.jpg'
+import TiagoPhoto from '../../../public/TiagoPhoto.jpg'
+import GuilhermePhoto from '../../../public/GuilhermePhoto.jpg'
+import GustavoPhoto from '../../../public/GustavoPhoto.jpg'
 
 export default function Sobrenos(){
   const teamMembers = [
-    { id: 1, nome: "Gustavo", cargo: "Front-end", src: Logo },
-    { id: 2, nome: "Ana", cargo: "Back-end", src: Img1 },
-    { id: 3, nome: "Carlos", cargo: "Designer", src: Logo },
-    { id: 4, nome: "Mariana", cargo: "Product Manager", src: Logo },
-    { id: 5, nome: "Rafael", cargo: "QA Engineer", src: Logo },
+    {id: 1, nome: "Gustavo", cargo: "Front-end", src: GustavoPhoto },
+    {id: 2, nome: "Luiz", cargo: "Back-end", src: LuizPhoto },
+    {id: 3, nome: "Guilherme", cargo: "Designer", src: GuilhermePhoto },
+    {id: 4, nome: "Eric", cargo: "Product Manager", src: EricPhoto },
+    {id: 5, nome: "Tiago", cargo: "QA Engineer", src: TiagoPhoto },
   ]
  
     return(
