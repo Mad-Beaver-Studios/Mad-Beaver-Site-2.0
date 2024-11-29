@@ -6,14 +6,15 @@ import { useState } from "react";
 import Img1 from "../../public/img1.png";
 import Img2 from "@/app/public/img2.jpeg";
 
-
 export default function Home() {
   const [imageError, setImageError] = useState(false);
 
   const handleImageError = () => {
     setImageError(true);
   };
-
+  function enviarEmail() {
+    console.log("enviado");
+  }
   return (
     <div className=" bg-[url] min-h-screen flex flex-col bg-black text-white">
       <main className="flex-grow">
@@ -88,15 +89,16 @@ export default function Home() {
                   pretium nisi. Suspendisse id scelerisque ipsum, a mattis
                   felis.
                 </p>
-                <button className="bg-white hover:bg-gray-200 text-black font-bold py-2 px-4 rounded transition duration-300">
+                <button
+                  onClick={enviarEmail}
+                  className="bg-white hover:bg-gray-200 text-black font-bold py-2 px-4 rounded transition duration-300"
+                >
                   JOGUE JÁ
                 </button>
               </motion.div>
             </div>
           </div>
         </section>
-
-       
       </main>
     </div>
   );
