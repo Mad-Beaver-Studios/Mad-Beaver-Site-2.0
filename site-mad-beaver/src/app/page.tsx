@@ -83,11 +83,7 @@ export default function Home() {
                   Bottomless Inferno
                 </h3>
                 <p className="mb-6 text-gray-300">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Quisque placerat sem sed cursus elementum. Donec condimentum
-                  nisi nec mi semper, non elementum eros ornare. Maecenas ac
-                  pretium nisi. Suspendisse id scelerisque ipsum, a mattis
-                  felis.
+                  Apos anos de servidão como contador no nono circulo do inferno, Davy o esqueleto decide escalar pelos andares ate chegar na terra enfrentado diversos demonios e encontrado figuras historicas. Baseado no poema de Dante Allighieri Bottomless Inferno é um jogo de ação em primeira pessoa com elementos que misturam roguelike e combate baseado em horda. 
                 </p>
                 <button
                   onClick={enviarEmail}
