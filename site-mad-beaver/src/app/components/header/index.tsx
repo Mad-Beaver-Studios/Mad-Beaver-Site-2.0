@@ -23,6 +23,7 @@ import Logo from "../../../../public/logo.png"
 import Img1 from "../../../../public/img1.png"
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import MultiImageHover from "../imagemChange";
 
 export function Header() {
   const [scroll, setscroll] = useState(true);
@@ -85,12 +86,7 @@ export function Header() {
 
                 {!isMobile && (
                   <div className="  flex sm:grow-[2] flex-col sm:mx-2 ">
-                    <span className="font-bold bg-slate-200 w-screen sm:w-full p-2 sm:p-0">jogos</span>
-                    <div className=" flex flex-col ">
-                      <Button variant="ghost">Ghost</Button>
-                      <Button variant="ghost">Ghost</Button>
-                      <Button variant="ghost">Ghost</Button>
-                    </div>
+                    < MultiImageHover/>
                   </div>
                 )}
                 {isMobile && (
@@ -111,68 +107,9 @@ export function Header() {
 
                   </div>
                 )}
-
-                {!isMobile && (
-                  <div className="  flex sm:grow-[2] flex-col sm:mx-2 ">
-                    <span className=" font-bold bg-slate-200 w-screen sm:w-full p-2 sm:p-0">sobre nós</span>
-                    <div className=" flex flex-col ">
-                      <Button variant="ghost">Ghost</Button>
-                      <Button variant="ghost">Ghost</Button>
-                      <Button variant="ghost">Ghost</Button>
-                    </div>
-                  </div>
-                )}
-                {isMobile && (
-                  <div className="  flex sm:grow-[2] flex-col sm:mx-2 ">
-                    <span className="font-bold bg-slate-200 w-screen sm:w-full p-2 sm:p-0 flex justify-between">
-                      Sobre nós
-                      <button>
-                        <CgChevronDoubleDown onClick={(() => setshow2(!show2))} size={24} />
-                      </button>
-                    </span>
-                    {show2 && (
-                      <div className=" flex flex-col ">
-                        <Button variant="ghost">Ghost</Button>
-                        <Button variant="ghost">Ghost</Button>
-                        <Button variant="ghost">Ghost</Button>
-                      </div>
-                    )}
-                  </div>
-                )}
-                {!isMobile && (
-                  <div className="  flex sm:grow-[2] flex-col sm:mx-2 ">
-                    <span className=" font-bold w-screen sm:w-full bg-slate-200 p-2 sm:p-0 ">outro exemplo</span>
-                    <div className=" flex flex-col ">
-                      <Button variant="ghost">Ghost</Button>
-                      <Button variant="ghost">Ghost</Button>
-                      <Button variant="ghost">Ghost</Button>
-                    </div>
-                  </div>
-                )}
-                {isMobile && (
-                  <div className="  flex sm:grow-[2] flex-col sm:mx-2 ">
-                    <span className="font-bold bg-slate-200 w-screen sm:w-full p-2 sm:p-0 flex justify-between">
-                      Sobre nós
-                      <button>
-                        <CgChevronDoubleDown onClick={(() => setshow3(!show3))} size={24} />
-                      </button>
-                    </span>
-                    {show3 && (
-                      <div className=" flex flex-col ">
-                        <Button variant="ghost">Ghost</Button>
-                        <Button variant="ghost">Ghost</Button>
-                        <Button variant="ghost">Ghost</Button>
-                      </div>
-                    )}
-                  </div>
-                )}
-
-
               </div>
 
-              <div className=" grow-[1] items-center sm:flex justify-center ">
-                <Image src={Img1} alt="teste" quality={100} className="w-full object-contain sm:w-48 sm:h-48 " />
-              </div>
+                
 
             </PopoverContent>
           </Popover>
@@ -187,7 +124,7 @@ export function Header() {
         </div>
         <BreadcrumbList>
           <BreadcrumbItem className=" hover:text-red-700 text-white hover:scale-110 transition-all duration-700">
-            <BreadcrumbLink href="/jogos">Jogos</BreadcrumbLink>
+            <BreadcrumbLink href="/test">Jogos</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem className="  hover:text-red-700 text-white hover:scale-110 transition-all duration-700">

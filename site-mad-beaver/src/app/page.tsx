@@ -6,6 +6,20 @@ import { useState } from "react";
 import Img1 from "../../public/img1.png";
 import Img2 from "@/app/public/img2.jpeg";
 
+
+  const jogos = [
+    {
+      name:"chrona",
+      descricao:"",
+      img: '/Chrono.jpeg'
+    },
+    {
+      name:" BOTTOMLESS INFERNO",
+      descricao:"  Apos anos de servidão como contador no nono circulo do inferno, Davy o esqueleto decide escalar pelos andares ate chegar na terra enfrentado diversos demonios e encontrado figuras historicas. Baseado no poema de Dante Allighieri Bottomless Inferno é um jogo de ação em primeira pessoa com elementos que misturam roguelike e combate baseado em horda. ",
+      img: '/img1.png'
+    }
+  ]
+
 export default function Home() {
   const [imageError, setImageError] = useState(false);
 
@@ -51,7 +65,8 @@ export default function Home() {
             <h2 className="text-6xl font-bold mb-12 text-center text-white">
               Jogos
             </h2>
-            <div className="flex flex-col md:flex-row items-center justify-between">
+          {jogos.map((jogo,index )=>(
+              <div className="flex flex-col md:flex-row items-center mb-10 justify-between">
               <motion.div
                 initial={{ opacity: 0, x: -100 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -64,7 +79,7 @@ export default function Home() {
                   </div>
                 ) : (
                   <Image
-                    src={Img1}
+                    src={jogo.img}
                     alt="BottomlessInferno Game"
                     width={450}
                     height={300}
@@ -80,10 +95,10 @@ export default function Home() {
                 className="md:w-1/2 md:pl-8"
               >
                 <h3 className="text-3xl font-bold mb-4 text-white">
-                  Bottomless Inferno
+                 {jogo.name}
                 </h3>
                 <p className="mb-6 text-gray-300">
-                  Apos anos de servidão como contador no nono circulo do inferno, Davy o esqueleto decide escalar pelos andares ate chegar na terra enfrentado diversos demonios e encontrado figuras historicas. Baseado no poema de Dante Allighieri Bottomless Inferno é um jogo de ação em primeira pessoa com elementos que misturam roguelike e combate baseado em horda. 
+                {jogo.descricao}
                 </p>
                 <button
                   onClick={enviarEmail}
@@ -93,6 +108,7 @@ export default function Home() {
                 </button>
               </motion.div>
             </div>
+          ))}
           </div>
         </section>
       </main>
