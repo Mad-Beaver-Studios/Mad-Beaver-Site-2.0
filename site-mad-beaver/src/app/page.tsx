@@ -9,13 +9,13 @@ import Img2 from "@/app/public/img2.jpeg";
 
   const jogos = [
     {
-      name:"chrona",
-      descricao:"",
+      name:"Chrono Leaf",
+      descricao:"Sozinho em um planeta pequeno, você possui apenas uma tarefa. reflorestar o que um dia foi um ambiente cheio de vida, com sementes que brotam das suas mãos e uma chuva que desafia as leis do tempo, tente achar o balanço entre a juventude e velhice antes que chegue sua hora.",
       img: '/Chrono.jpeg'
     },
     {
       name:" BOTTOMLESS INFERNO",
-      descricao:"  Apos anos de servidão como contador no nono circulo do inferno, Davy o esqueleto decide escalar pelos andares ate chegar na terra enfrentado diversos demonios e encontrado figuras historicas. Baseado no poema de Dante Allighieri Bottomless Inferno é um jogo de ação em primeira pessoa com elementos que misturam roguelike e combate baseado em horda. ",
+      descricao:"Apos anos de servidão como contador no nono circulo do inferno, Davy o esqueleto decide escalar pelos andares ate chegar na terra enfrentado diversos demonios e encontrado figuras historicas. Baseado no poema de Dante Allighieri Bottomless Inferno é um jogo de ação em primeira pessoa com elementos que misturam roguelike e combate baseado em horda.",
       img: '/img1.png'
     }
   ]
